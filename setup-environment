@@ -235,6 +235,7 @@ Common targets are:
     gateworks-image-minimal
     gateworks-image-test
     gateworks-image-multimedia
+    gateworks-image-gui
     meta-toolchain
     meta-toolchain-sdk
     adt-installer
