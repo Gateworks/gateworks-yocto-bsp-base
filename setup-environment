@@ -234,10 +234,9 @@ You can now run 'bitbake <target>'
 
 Common targets are:
     core-image-minimal
-    gateworks-image-minimal
     gateworks-image-test
-    gateworks-image-multimedia
     gateworks-image-gui
+    fsl-image-multimedia
     meta-toolchain
     meta-toolchain-sdk
     adt-installer
