@@ -120,6 +120,10 @@ if [ -z "$MACHINE" ]; then
     MACHINE='ventana'
 fi
 
+if [ -z "$DISTRO" ]; then
+    DISTRO='poky'
+fi
+
 if [ -z "$PACKAGING" ]; then
     PACKAGING='ipk'
 fi
