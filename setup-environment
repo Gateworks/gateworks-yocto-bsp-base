@@ -175,6 +175,16 @@ BB_NUMBER_THREADS = '$NCPU'
 PARALLEL_MAKE = '-j $NCPU'
 
 DL_DIR ?= "\${BSPDIR}/downloads/"
+
+LICENSE_FLAGS_WHITELIST += "commercial"
+
+PACKAGECONFIG_append_pn-gstreamer1.0-plugins-base = " cdparanoia opus "
+PACKAGECONFIG_append_pn-gstreamer1.0-plugins-good = " dv1394 jack libv4l2 vpx wavpack "
+PACKAGECONFIG_append_pn-gstreamer1.0-plugins-bad = " assrender dc1394 faac faad fluidsynth kms libmms libssh2 modplug openal opencv openjpeg opusparse resindvd rsvg rtmp schroedinger srtp voaacenc voamrwbenc webp "
+PACKAGECONFIG_append_pn-gstreamer1.0-plugins-ugly = " amrnb amrwb cdio dvdread x264 "
+
+PACKAGECONFIG_append_pn-qtbase = " accessibility fontconfig "
+DISTRO_FEATURES_remove = " wayland "
 EOF
     # Change settings according environment
     sed -e "s,MACHINE ??=.*,MACHINE ??= '$MACHINE',g" \
